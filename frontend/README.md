@@ -3,7 +3,7 @@
 ## Instalar y correr
 
 ```bash
-cd frontend-react
+cd frontend
 npm install
 npm run dev
 ```
