@@ -148,6 +148,7 @@ al rol del usuario.
 - Relaciones entre tablas
 - Usuarios y roles
 
- |Usuario	   | Contraseña    |   	Rol        |
+ |Usuario	   | Contraseña   |   	Rol      |
+ |---|---|
  |admin	     |  dba1     	  |  Administrador |
  |prof_guia	 | prof1        |  	Profesor guía |
