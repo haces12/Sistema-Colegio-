@@ -148,7 +148,33 @@ al rol del usuario.
 - Relaciones entre tablas
 - Usuarios y roles
 
+  El proyecto utiliza una arquitectura separada entre frontend y backend:
+
+```text
+                    ┌─────────────────────┐
+                    │      Usuario        │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │       React         │
+                    │      + Vite         │
+                    └──────────┬──────────┘
+                               │
+                         HTTP / REST
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Node.js / Express │
+                    │        API          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │       MySQL         │
+                    │      colegio2       │
+```
+
  |Usuario	   | Contraseña   |   	Rol      |
- |---|---|
  |admin	     |  dba1     	  |  Administrador |
  |prof_guia	 | prof1        |  	Profesor guía |
